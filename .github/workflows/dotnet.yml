@@ -31,4 +31,4 @@ jobs:
       - name: Publish to nuget.org
         if:
           github.ref == 'refs/heads/main'
-        run: dotnet nuget push NugetCliSearch/bin/Release/*.nupkg --source "github" --skip-duplicate
+        run: dotnet nuget push NugetCliSearch/bin/Release/*.nupkg  --skip-duplicate
